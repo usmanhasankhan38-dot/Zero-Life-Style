@@ -1,0 +1,273 @@
+
+/* Inline Style 1 */
+
+  /* Typography (heading) — skipped entirely when it is the same face as the body font *//* Typography (body) */
+  @font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//zerolifestyle.co/cdn/fonts/inter/inter_n4.b2a3f24c19b4de56e8871f609e73ca7f6d2e2bb9.woff2") format("woff2"),
+       url("//zerolifestyle.co/cdn/fonts/inter/inter_n4.af8052d517e0c9ffac7b814872cecc27ae1fa132.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//zerolifestyle.co/cdn/fonts/inter/inter_i4.feae1981dda792ab80d117249d9c7e0f1017e5b3.woff2") format("woff2"),
+       url("//zerolifestyle.co/cdn/fonts/inter/inter_i4.62773b7113d5e5f02c71486623cf828884c85c6e.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//zerolifestyle.co/cdn/fonts/inter/inter_n6.771af0474a71b3797eb38f3487d6fb79d43b6877.woff2") format("woff2"),
+       url("//zerolifestyle.co/cdn/fonts/inter/inter_n6.88c903d8f9e157d48b73b7777d0642925bcecde7.woff") format("woff");
+}
+
+@font-face {
+  font-family: Inter;
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("//zerolifestyle.co/cdn/fonts/inter/inter_i6.3bbe0fe1c7ee4f282f9c2e296f3e4401a48cbe19.woff2") format("woff2"),
+       url("//zerolifestyle.co/cdn/fonts/inter/inter_i6.8bea21f57a10d5416ddf685e2c91682ec237876d.woff") format("woff");
+}
+
+:root {--heading-color: 40, 40, 40;
+    --text-color: 0, 0, 0;
+    --background: 255, 255, 255;
+    --secondary-background: 245, 245, 245;
+    --border-color: 217, 217, 217;
+    --border-color-darker: 153, 153, 153;
+    --success-color: 46, 158, 123;
+    --success-background: 213, 236, 229;
+    --error-color: 222, 42, 42;
+    --error-background: 253, 240, 240;
+    --primary-button-background: 0, 0, 0;
+    --primary-button-text-color: 255, 255, 255;
+    --secondary-button-background: 40, 40, 40;
+    --secondary-button-text-color: 40, 40, 40;
+    --product-star-rating: 246, 164, 41;
+    --product-on-sale-accent: 222, 42, 42;
+    --product-sold-out-accent: 111, 113, 155;
+    --product-custom-label-background: 64, 93, 230;
+    --product-custom-label-text-color: 255, 255, 255;
+    --product-custom-label-2-background: 243, 255, 52;
+    --product-custom-label-2-text-color: 0, 0, 0;
+    --product-low-stock-text-color: 222, 42, 42;
+    --product-in-stock-text-color: 46, 158, 123;
+    --loading-bar-background: 0, 0, 0;
+
+    /* We duplicate some "base" colors as root colors, which is useful to use on drawer elements or popover without. Those should not be overridden to avoid issues */
+    --root-heading-color: 40, 40, 40;
+    --root-text-color: 0, 0, 0;
+    --root-background: 255, 255, 255;
+    --root-border-color: 217, 217, 217;
+    --root-primary-button-background: 0, 0, 0;
+    --root-primary-button-text-color: 255, 255, 255;
+
+    --base-font-size: 15px;
+    --heading-font-family: Inter, sans-serif;
+    --heading-font-weight: 400;
+    --heading-font-style: normal;
+    --heading-text-transform: normal;
+    --text-font-family: Inter, sans-serif;
+    --text-font-weight: 400;
+    --text-font-style: normal;
+    --text-font-bold-weight: 600;
+
+    /* Typography (font size) */
+    --heading-xxsmall-font-size: 10px;
+    --heading-xsmall-font-size: 10px;
+    --heading-small-font-size: 11px;
+    --heading-large-font-size: 32px;
+    --heading-h1-font-size: 32px;
+    --heading-h2-font-size: 28px;
+    --heading-h3-font-size: 26px;
+    --heading-h4-font-size: 22px;
+    --heading-h5-font-size: 18px;
+    --heading-h6-font-size: 16px;
+
+    /* Control the look and feel of the theme by changing radius of various elements */
+    --button-border-radius: 6px;
+    --block-border-radius: 8px;
+    --block-border-radius-reduced: 4px;
+    --color-swatch-border-radius: 100%;
+
+    /* Button size */
+    --button-height: 48px;
+    --button-small-height: 40px;
+
+    /* Form related */
+    --form-input-field-height: 48px;
+    --form-input-gap: 16px;
+    --form-submit-margin: 24px;
+
+    /* Product listing related variables */
+    --product-list-block-spacing: 32px;
+
+    /* Video related */
+    --play-button-background: 255, 255, 255;
+    --play-button-arrow: 0, 0, 0;
+
+    /* RTL support */
+    --transform-logical-flip: 1;
+    --transform-origin-start: left;
+    --transform-origin-end: right;
+
+    /* Other */
+    --zoom-cursor-svg-url: url(//zerolifestyle.co/cdn/shop/t/64/assets/zoom-cursor.svg?v=122100305454053401571789556607);
+    --arrow-right-svg-url: url(//zerolifestyle.co/cdn/shop/t/64/assets/arrow-right.svg?v=70871338000329279091789556607);
+    --arrow-left-svg-url: url(//zerolifestyle.co/cdn/shop/t/64/assets/arrow-left.svg?v=176537643540911574551789556607);
+
+    /* Some useful variables that we can reuse in our CSS. Some explanation are needed for some of them:
+       - container-max-width-minus-gutters: represents the container max width without the edge gutters
+       - container-outer-width: considering the screen width, represent all the space outside the container
+       - container-outer-margin: same as container-outer-width but get set to 0 inside a container
+       - container-inner-width: the effective space inside the container (minus gutters)
+       - grid-column-width: represents the width of a single column of the grid
+       - vertical-breather: this is a variable that defines the global "spacing" between sections, and inside the section
+                            to create some "breath" and minimum spacing
+     */
+    --container-max-width: 100%;
+    --container-gutter: 10px;
+    --container-max-width-minus-gutters: calc(var(--container-max-width) - (var(--container-gutter)) * 2);
+    --container-outer-width: max(calc((100vw - var(--container-max-width-minus-gutters)) / 2), var(--container-gutter));
+    --container-outer-margin: var(--container-outer-width);
+    --container-inner-width: calc(100vw - var(--container-outer-width) * 2);
+
+    --grid-column-count: 10;
+    --grid-gap: 15px;
+    --grid-column-width: calc((100vw - var(--container-outer-width) * 2 - var(--grid-gap) * (var(--grid-column-count) - 1)) / var(--grid-column-count));
+
+    --vertical-breather: 28px;
+    --vertical-breather-tight: 28px;
+
+    /* Shopify related variables */
+    --payment-terms-background-color: #ffffff;
+  }
+
+  @media screen and (min-width: 741px) {
+    :root {
+      --container-gutter: 40px;
+      --grid-column-count: 20;
+      --vertical-breather: 40px;
+      --vertical-breather-tight: 40px;
+
+      /* Typography (font size) */
+      --heading-xsmall-font-size: 11px;
+      --heading-small-font-size: 12px;
+      --heading-large-font-size: 48px;
+      --heading-h1-font-size: 48px;
+      --heading-h2-font-size: 36px;
+      --heading-h3-font-size: 30px;
+      --heading-h4-font-size: 22px;
+      --heading-h5-font-size: 18px;
+      --heading-h6-font-size: 16px;
+
+      /* Form related */
+      --form-input-field-height: 52px;
+      --form-submit-margin: 32px;
+
+      /* Button size */
+      --button-height: 52px;
+      --button-small-height: 44px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    :root {
+      --vertical-breather: 48px;
+      --vertical-breather-tight: 48px;
+      --product-list-block-spacing: 48px;
+
+      /* Typography */
+      --heading-large-font-size: 58px;
+      --heading-h1-font-size: 50px;
+      --heading-h2-font-size: 44px;
+      --heading-h3-font-size: 32px;
+      --heading-h4-font-size: 26px;
+      --heading-h5-font-size: 22px;
+      --heading-h6-font-size: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    :root {
+      --vertical-breather: 48px;
+      --vertical-breather-tight: 48px;
+    }
+  }
+
+/* Inline Style 2 */
+
+        #main > .shopify-section:not(.shopify-section-group-footer-group) {
+          --home-gutter: 16px;
+          --container-gutter: var(--home-gutter);
+          --container-max-width-minus-gutters: calc(var(--container-max-width) - var(--container-gutter) * 2);
+          --container-outer-width: max(calc((100vw - var(--container-max-width-minus-gutters)) / 2), var(--container-gutter));
+          --container-outer-margin: var(--container-outer-width);
+          --container-inner-width: calc(100vw - var(--container-outer-width) * 2);
+          --grid-column-width: calc((100vw - var(--container-outer-width) * 2 - var(--grid-gap) * (var(--grid-column-count) - 1)) / var(--grid-column-count));
+        }
+        @media screen and (min-width: 768px) {
+          #main > .shopify-section:not(.shopify-section-group-footer-group) { --home-gutter: 32px; }
+        }
+        #main > .shopify-section:not(.shopify-section-group-footer-group) .section:not(.section--flush) { margin-block: 0 var(--home-gutter); }
+        #main > .shopify-section:not(.shopify-section-group-footer-group) .vertical-breather:not(.vertical-breather--margin) { padding-block: 0 var(--home-gutter); }
+        #main > .shopify-section:not(.shopify-section-group-footer-group) slide-show.slideshow { margin: 0 var(--home-gutter) var(--home-gutter); }
+        #main > .shopify-section:not(.shopify-section-group-footer-group) section.zolo-liquid .container,
+        #main > .shopify-section:not(.shopify-section-group-footer-group) .home-categories-wrapper { padding-inline: var(--home-gutter); }
+      
+/* Inline Style 3 */
+@font-face {
+        font-family: "Helvetica Neue";
+        font-style: normal;
+        font-weight: 100 300;
+        font-display: swap;
+        src: url("//zerolifestyle.co/cdn/shop/t/64/assets/HelveticaNeueLight.woff2?v=147511219280026083261789556592") format("woff2");
+      }
+      @font-face {
+        font-family: "Helvetica Neue";
+        font-style: normal;
+        font-weight: 400 500;
+        font-display: swap;
+        src: url("//zerolifestyle.co/cdn/shop/t/64/assets/HelveticaNeueMedium.woff2?v=64356856415286767361789556592") format("woff2");
+      }
+      @font-face {
+        font-family: "Helvetica Neue";
+        font-style: normal;
+        font-weight: 600 900;
+        font-display: swap;
+        src: url("//zerolifestyle.co/cdn/shop/t/64/assets/HelveticaNeueBold.woff2?v=104529894588181994341789556592") format("woff2");
+      }@font-face {
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 100 900;
+        font-display: swap;
+        src: url("//zerolifestyle.co/cdn/shop/t/64/assets/Helvetica_0.woff2?v=29304196815186574571789556592") format("woff2");
+      }
+      @font-face {
+    font-family: 'Conthrax';
+    src: url('//zerolifestyle.co/cdn/shop/t/64/assets/Conthrax-SemiBold.woff2?v=40318') format('woff2'),
+         url('//zerolifestyle.co/cdn/shop/t/64/assets/Conthrax-SemiBold.woff?v=40318') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+    
+/* Inline Style 4 */
+.jdgm-xx{left:0}:root{--jdgm-primary-color: #000;--jdgm-secondary-color: rgba(0,0,0,0.1);--jdgm-star-color: #ffba00;--jdgm-write-review-text-color: white;--jdgm-write-review-bg-color: #000000;--jdgm-paginate-color: #000;--jdgm-border-radius: 10;--jdgm-reviewer-name-color: #000000}.jdgm-histogram__bar-content{background-color:#000}.jdgm-rev[data-verified-buyer=true] .jdgm-rev__icon.jdgm-rev__icon:after,.jdgm-rev__buyer-badge.jdgm-rev__buyer-badge{color:white;background-color:#000}.jdgm-review-widget--small .jdgm-gallery.jdgm-gallery .jdgm-gallery__thumbnail-link:nth-child(8) .jdgm-gallery__thumbnail-wrapper.jdgm-gallery__thumbnail-wrapper:before{content:"See more"}@media only screen and (min-width: 768px){.jdgm-gallery.jdgm-gallery .jdgm-gallery__thumbnail-link:nth-child(8) .jdgm-gallery__thumbnail-wrapper.jdgm-gallery__thumbnail-wrapper:before{content:"See more"}}.jdgm-preview-badge .jdgm-star.jdgm-star{color:#ffba00}.jdgm-prev-badge[data-average-rating='0.00']{display:none !important}.jdgm-author-all-initials{display:none !important}.jdgm-author-last-initial{display:none !important}.jdgm-rev-widg__title{visibility:hidden}.jdgm-rev-widg__summary-text{visibility:hidden}.jdgm-prev-badge__text{visibility:hidden}.jdgm-rev__prod-link-prefix:before{content:'about'}.jdgm-rev__variant-label:before{content:'Variant: '}.jdgm-rev__out-of-store-text:before{content:'(out of store)'}@media only screen and (min-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}@media only screen and (max-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}.jdgm-preview-badge[data-template="product"]{display:none !important}.jdgm-preview-badge[data-template="collection"]{display:none !important}.jdgm-preview-badge[data-template="index"]{display:none !important}.jdgm-verified-count-badget[data-from-snippet="true"]{display:none !important}.jdgm-carousel-wrapper[data-from-snippet="true"]{display:none !important}.jdgm-all-reviews-text[data-from-snippet="true"]{display:none !important}.jdgm-medals-section[data-from-snippet="true"]{display:none !important}.jdgm-ugc-media-wrapper[data-from-snippet="true"]{display:none !important}.jdgm-histogram{display:none !important}.jdgm-widget .jdgm-sort-dropdown-wrapper{margin-top:12px}.jdgm-rev__transparency-badge[data-badge-type="review_collected_via_store_invitation"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_collected_from_another_provider"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_collected_from_store_visitor"]{display:none !important}.jdgm-rev__transparency-badge[data-badge-type="review_earned_for_future_purchase"]{display:none !important}.jdgm-review-snippet-widget{--jdgm-snippet-card-color: #fff;--jdgm-snippet-text-color: #000;--jdgm-snippet-lighter-text-color: #7B7B7B;--jdgm-snippet-star-color: #000;--jdgm-snippet-border-radius: 8px;--jdgm-snippet-arrows-bg-color: #fff;--jdgm-snippet-arrows-color: #000}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__cards-container .jdgm-rev-snippet-card{border-radius:8px;background:#fff}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__cards-container .jdgm-rev-snippet-card__rev-rating .jdgm-star{color:#000}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__prev-btn,.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__next-btn{border-radius:50%;background:#fff}.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__prev-btn>svg,.jdgm-review-snippet-widget .jdgm-rev-snippet-widget__next-btn>svg{fill:#000}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jm-mfp-content,.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev__icon,.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev__pic-img,.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev__reply{border-radius:8px}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev[data-verified-buyer="true"] .jdgm-full-rev__icon::after{border-radius:8px}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev .jdgm-rev__buyer-badge{border-radius:calc( 8px / 2 )}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev .jdgm-full-rev__replier::before{content:'ZeroLifestyle.co'}.jdgm-full-rev-modal.rev-snippet-widget .jm-mfp-container .jdgm-full-rev .jdgm-full-rev__product-button{border-radius:calc( 8px * 6 )}
+
+/* Inline Style 5 */
+@media screen and (min-width: 800px){.jdgm-review-widget .jdgm-rev.jdgm-divider-top.jdgm--done-setup.jdgm--leex-done-setup{width:calc(25% - 15px) !important}}@media (max-width: 767px){.jdgm-review-widget .jdgm-rev.jdgm-divider-top.jdgm--done-setup.jdgm--leex-done-setup{padding:10px;border-color:#000;box-shadow:1px 3px 4px 4px #cccccc80 !important;margin-bottom:10px !important}}
+
+/* Inline Style 6 */
+
+  @-webkit-keyframes jdgm-spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes jdgm-spin{0%{-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(359deg);-ms-transform:rotate(359deg);transform:rotate(359deg)}}@font-face{font-family:'JudgemeStar';src:url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAScAA0AAAAABrAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAEgAAAABoAAAAcbyQ+3kdERUYAAARgAAAAHgAAACAAMwAGT1MvMgAAAZgAAABGAAAAVi+vS9xjbWFwAAAB8AAAAEAAAAFKwBMjvmdhc3AAAARYAAAACAAAAAj//wADZ2x5ZgAAAkAAAAEJAAABdH33LXtoZWFkAAABMAAAAC0AAAA2BroQKWhoZWEAAAFgAAAAHAAAACQD5QHQaG10eAAAAeAAAAAPAAAAFAYAAABsb2NhAAACMAAAAA4AAAAOAO4AeG1heHAAAAF8AAAAHAAAACAASgAvbmFtZQAAA0wAAADeAAABkorWfVZwb3N0AAAELAAAACkAAABEp3ubLXgBY2BkYADhPPP4OfH8Nl8ZuJkYQODS2fRrCPr/aSYGxq1ALgcDWBoAO60LkwAAAHgBY2BkYGDc+v80gx4TAwgASaAICmABAFB+Arl4AWNgZGBgYGPQYWBiAAIwyQgWc2AAAwAHVQB6eAFjYGRiYJzAwMrAwejDmMbAwOAOpb8ySDK0MDAwMbByMsCBAAMCBKS5pjA4PGB4wMR44P8BBj3GrQymQGFGkBwAjtgK/gAAeAFjYoAAEA1jAwAAZAAHAHgB3crBCcAwDEPRZydkih567CDdf4ZskmLwFBV8xBfCaC4BXkOUmx4sU0h2ngNb9V0vQCxaRKIAevT7fGWuBrEAAAAAAAAAAAA0AHgAugAAeAF9z79Kw1AUx/FzTm7un6QmJtwmQ5Bg1abgEGr/BAqlU6Gju+Cgg1MkQ/sA7Vj7BOnmO/gUvo2Lo14NqIO6/IazfD8HEODtmQCfoANwNsyp2/GJt3WKQrd1NLiYYWx2PBqOsmJMEOznPOTzfSCrhAtbbLdmeFLJV9eKd63WLrZcIcuaEVdssWCKM6pLCfTVOYbz/0pNSMSZKLIZpvh78sAUH6PlMrreTCabP9r+Z/puPZ2ur/RqpQHgh+MIegCnXeM4MRAPjYN//5tj4ZtTjkFqEdmeMShlEJ7tVAly2TAkx6R68Fl4E/aVvn8JqHFQ4JS1434gXKcuL31dDhzs3YbsEOAd/IU88gAAAHgBfY4xTgMxEEVfkk0AgRCioKFxQYd2ZRtpixxgRU2RfhU5q5VWseQ4JdfgAJyBlmNwAM7ABRhZQ0ORwp7nr+eZAa54YwYg9zm3ynPOeFRe8MCrciXOh/KSS76UV5L/iDmrLiS5AeU519wrL3jmSbkS5115yR2fyivJv9kx0ZMZ2RLZw27q87iNQi8EBo5FSPIMw3HqBboi5lKTGAGDp8FKXWP+t9TU01Lj5His1Ba6uM9dTEMwvrFmbf5GC/q2drW3ruXUhhsCiQOjznFlCzYhHUZp4xp76vsvQh89CQAAeAFjYGJABowM6IANLMrEyMTIzMjCXpyRWJBqZshWXJJYBKOMAFHFBucAAAAAAAAB//8AAngBY2BkYGDgA2IJBhBgAvKZGViBJAuYxwAABJsAOgAAeAFjYGBgZACCk535hiD60tn0azAaAEqpB6wAAA==") format("woff");font-weight:normal;font-style:normal}.jdgm-star{font-family:'JudgemeStar';display:inline !important;text-decoration:none !important;padding:0 4px 0 0 !important;margin:0 !important;font-weight:bold;opacity:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.jdgm-star:hover{opacity:1}.jdgm-star:last-of-type{padding:0 !important}.jdgm-star.jdgm--on:before{content:"\e000"}.jdgm-star.jdgm--off:before{content:"\e001"}.jdgm-star.jdgm--half:before{content:"\e002"}.jdgm-widget *{margin:0;line-height:1.4;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-overflow-scrolling:touch}.jdgm-hidden{display:none !important;visibility:hidden !important}.jdgm-temp-hidden{display:none}.jdgm-spinner{width:40px;height:40px;margin:auto;border-radius:50%;border-top:2px solid #eee;border-right:2px solid #eee;border-bottom:2px solid #eee;border-left:2px solid #ccc;-webkit-animation:jdgm-spin 0.8s infinite linear;animation:jdgm-spin 0.8s infinite linear}.jdgm-spinner:empty{display:block}.jdgm-prev-badge{display:block !important}
+
